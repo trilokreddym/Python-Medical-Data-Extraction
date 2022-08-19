@@ -31,7 +31,7 @@ Here, we are using the Python programming language and pytesseract google librar
 
 ## Workflow
 
-<img src="https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/blob/main/Backend/Notebooks/workflow.jpg" class = "center">
+<img src="https://github.com/trilokreddym/Python-Medical-Data-Extraction/blob/main/Backend/Notebooks/workflow.jpg" class = "center">
 
 ### PDF to Image
 
@@ -41,7 +41,7 @@ For converting PDF to image, we have used pdf2image library.
 
 Tried extracting data from source files without any processing, as they are not in proper format to be extracted, the extracted data was not as expected.
 
-<img src="https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/blob/main/Backend/Notebooks/dark_image.jpg" width="350" class="center">
+<img src="https://github.com/trilokreddym/Python-Medical-Data-Extraction/blob/main/Backend/Notebooks/dark_image.jpg" width="350" class="center">
 
 ### Extracted data from the above image
 ```commandline
@@ -67,7 +67,7 @@ or 1 month
 
 we decided to preprocess the image using opencv module, before extracting data from them. For that we have first used normal thresholding and checked, which resulted in below image
 
-<img src="https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/blob/main/Backend/Notebooks/filter_dark.jpg" width="350" class="center">
+<img src="https://github.com/trilokreddym/Python-Medical-Data-Extraction/blob/main/Backend/Notebooks/filter_dark.jpg" width="350" class="center">
 
 
 So, if there is any shadow or some noise, the normal thresholding fade out the area. which will result in loss of data. 
@@ -75,7 +75,7 @@ So, if there is any shadow or some noise, the normal thresholding fade out the a
 In the search of better approach of this problem, we have decided to use adaptive thresholding technique. In this technique, the image will be divided into sub image and the thresholding value will be different for all sub regions.
 And the end result of adaptive thresholding is much better compared to normal thresholding.
 
-<img src="https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/blob/main/Backend/Notebooks/adaptive_filter_dark.jpg" width="350" class='center'>
+<img src="https://github.com/trilokreddym/Python-Medical-Data-Extraction/blob/main/Backend/Notebooks/adaptive_filter_dark.jpg" width="350" class='center'>
 
 ### After preprocessing the image data extraction
 
@@ -104,14 +104,14 @@ Lialda - take 2 pill everyday for 1 month
 
 For all these above trials, used jupyter books and developed the small bits of the functionalities., which can be used later while designing the class.
 
-[Notebooks](https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/tree/main/Backend/Notebooks)
+[Notebooks](https://github.com/trilokreddym/Python-Medical-Data-Extraction/tree/main/Backend/Notebooks)
 
 ---
 ### OOPS design
 
 The code was written in using OOPs concepts for extracting the medical data from prescription and patient details documents.
 
-[Code](https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/tree/main/Backend/src)
+[Code](https://github.com/trilokreddym/Python-Medical-Data-Extraction/tree/main/Backend/src)
 
 ---
 ### Regular expression
@@ -128,7 +128,7 @@ Before writing the python code, It is advisable to practise and match the patter
 In this project test driven development methodology was used to develop the code. For testing pytest module was used. 
 For all the methods and final result the test cases was designed and checked simultaneously while developing the code.
 
-[Test cases](https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/tree/main/Backend/Test)
+[Test cases](https://github.com/trilokreddym/Python-Medical-Data-Extraction/tree/main/Backend/Test)
 
 ---
 ### FastApi
@@ -144,7 +144,7 @@ Used FastAPI for hosting the server of the project. FastApi, as name suggest is 
 
 As it is a backend project, not developed frontend part. For checking how the server responds for http requests, used postman to trigger http requests and tested the outcome.
 
-<img src="https://github.com/Naveen-S6/Data_Extraction_Healthcare_Project/blob/main/Backend/Notebooks/postman.png" width="600" class="center">
+<img src="https://github.com/trilokreddym/Python-Medical-Data-Extraction/blob/main/Backend/Notebooks/postman.png" width="600" class="center">
 
 ---
 ## Result
